@@ -2252,6 +2252,42 @@ td:last-child {
   }
 }
 
+* Media queries para hacer las tablas responsivas */
+@media only screen and (max-width: 600px) {
+  .table-responsive {
+    th, td {
+      padding: var(--vspace-0_5) 1rem;
+      font-size: 0.9rem;
+      font-size: calc(var(--text-size) * 0.89);
+      line-height: calc(1.125 * var(--space));
+    }
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .section-table{
+
+    th, td {
+      padding: var(--vspace-0_25) 0.5rem; /* Reduce el padding para pantallas muy pequeñas */
+      font-size: 0.8rem; /* Ajusta el tamaño de la fuente */
+    }
+  
+    th[colspan="4"] {
+      font-size: 0.9rem; /* Ajuste del tamaño de fuente para títulos con colspan */
+    }
+  
+    h2 {
+      font-size: 1.4rem; /* Ajusta el tamaño de los encabezados */
+    }
+  
+    .section-table {
+      padding: 0 var(--vspace-0_5); /* Añade padding a la sección para evitar que se pegue a los bordes */
+    }
+
+  }
+
+}
+
 /* ===================================================================
  * # COMPONENTS
  *
@@ -3922,7 +3958,6 @@ td:last-child {
  * ## about timelines
  * -------------------------------------------------------------------- */
 
-
 /* ------------------------------------------------------------------- 
  * responsive:
  * about
@@ -3987,7 +4022,6 @@ td:last-child {
   }
 }
 
-
 /* ===================================================================
  * # TABLA ACTOR
  *
@@ -3995,26 +4029,119 @@ td:last-child {
  * ------------------------------------------------------------------- */
 
 table {
-    border-collapse: collapse;
-    border: 1px solid #ddd;
-  }
-
-  th, td {
-    border-bottom: 1px solid #ddd;
-  }
-
-  th:first-child, td:first-child {
-    padding-left: 20px;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  font-size: 1em;
 }
 
-  th {
-    background-color: #f2f2f2;
+th,
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 20px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Media query para móviles */
+@media only screen and (max-width: 600px) {
+  th,
+  td {
+    padding: var(--vspace-0_5) 1rem; /* Reduce el espaciado vertical y horizontal */
+    font-size: 0.9rem;
+    font-size: calc(var(--text-size) * 0.89);
+    line-height: calc(1.125 * var(--space)); /* Reduce el tamaño de la fuente */
+  }
+}
+
+* Media queries para hacer las tablas responsivas */
+@media only screen and (max-width: 600px) {
+  .table-responsive {
+    th, td {
+      padding: var(--vspace-0_5) 1rem;
+      font-size: 0.9rem;
+      font-size: calc(var(--text-size) * 0.89);
+      line-height: calc(1.125 * var(--space));
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .contenedor-main{
+    padding-top: var(--vspace-5_5)!important; 
+  }
+
+  .section-table{
+
+    th, td {
+      padding: var(--vspace-0_25) 0.5rem; /* Reduce el padding para pantallas muy pequeñas */
+      font-size: 1.5rem; /* Ajusta el tamaño de la fuente */
+    }
+  
+    th[colspan="4"] {
+      font-size: 1.5rem; /* Ajuste del tamaño de fuente para títulos con colspan */
+    }
+  
+    h2 {
+      font-size: 3rem; /* Ajusta el tamaño de los encabezados */
+    }
+  
+    .section-table {
+      padding: 0 var(--vspace-0_5); /* Añade padding a la sección para evitar que se pegue a los bordes */
+    }
 
   }
 
-  tr:hover {
-    background-color: #f5f5f5;
+}
+
+@media only screen and (max-width: 370px) {
+
+  .contenedor-main{
+    padding-top: var(--vspace-5_5)!important; 
   }
+
+  .attention-getter{
+    font-size: 1.2rem!important;
+  }
+  .section-table{
+
+    th, td {
+      padding: var(--vspace-0_25) 0.5rem; /* Reduce el padding para pantallas muy pequeñas */
+      font-size: 1rem; /* Ajusta el tamaño de la fuente */
+    }
+  
+    th[colspan="4"] {
+      font-size: 1.2rem; /* Ajuste del tamaño de fuente para títulos con colspan */
+    }
+  
+    h2 {
+      font-size: 2.2rem; /* Ajusta el tamaño de los encabezados */
+    }
+  
+    .section-table {
+      padding: 0 var(--vspace-0_5); /* Añade padding a la sección para evitar que se pegue a los bordes */
+    }
+
+  }
+
+}
+
+.contenedor-main{
+  font-size: 1em;
+  padding-top: 5%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 /* ===================================================================
  * # WORKS
@@ -4121,7 +4248,6 @@ table {
   visibility: visible;
 }
 
-
 /* ------------------------------------------------------------------- 
  * responsive:
  * works
@@ -4189,6 +4315,27 @@ table {
 .counter-items span {
   font-size: 0.5em;
   margin-left: 0.1em;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## videbook
+ * ------------------------------------------------------------------- */
+
+.videobook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videobook iframe {
+  width: 80vw;
+  height: 50vh;
+}
+
+@media screen and (max-width: 768px) {
+  .videobook iframe {
+    height: 30vh; /* Cambia la altura a 30% de la altura de la ventana */
+  }
 }
 
 /* ------------------------------------------------------------------- 
@@ -4301,29 +4448,9 @@ table {
 }
 
 /* ------------------------------------------------------------------- 
- * ## videbook
- * ------------------------------------------------------------------- */
-
-.videobook {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.videobook iframe {
-  width: 80vw;
-  height: 50vh;
-}
-
-@media screen and (max-width: 768px) {
-  .videobook iframe {
-    height: 30vh; /* Cambia la altura a 30% de la altura de la ventana */
-  }
-}
-
-/* ------------------------------------------------------------------- 
  * ## copyright
  * ------------------------------------------------------------------- */
+
 .ss-copyright {
   margin: 0 var(--vspace-2) 0 0;
   line-height: var(--vspace-0_875);
@@ -4353,9 +4480,10 @@ table {
   display: none;
 }
 
+
 /* ------------------------------------------------------------------- 
- * ## go top
- * ------------------------------------------------------------------- */
+* ## go top
+* ------------------------------------------------------------------- 
 .ss-go-top {
   --width-label: 11rem;
   z-index: 2;
@@ -4406,9 +4534,9 @@ table {
 }
 
 /* ------------------------------------------------------------------- 
- * responsive:
- * footer
- * ------------------------------------------------------------------- */
+* responsive:
+* footer
+* ------------------------------------------------------------------- 
 @media screen and (max-width: 1600px) {
   .ss-go-top {
     bottom: calc(var(--bottom-padding) - var(--vspace-0_25));
@@ -4474,6 +4602,7 @@ table {
 
 @media screen and (max-width: 400px) {
   .ss-go-top {
-    right: -2rem;
+    right: -30rem;
   }
 }
+
