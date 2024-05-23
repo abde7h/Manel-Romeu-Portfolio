@@ -4075,7 +4075,7 @@ tr:hover {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 435px) {
 
   .contenedor-main{
     padding-top: var(--vspace-5_5)!important; 
@@ -4132,6 +4132,10 @@ tr:hover {
       padding: 0 var(--vspace-0_5); /* Añade padding a la sección para evitar que se pegue a los bordes */
     }
 
+  }
+
+  .idiomas li{
+    font-size: 1.2rem;
   }
 
 }
