@@ -2252,10 +2252,23 @@ td:last-child {
   }
 }
 
-* Media queries para hacer las tablas responsivas */
-@media only screen and (max-width: 600px) {
+*
+  Media
+  queries
+  para
+  hacer
+  las
+  tablas
+  responsivas
+  */
+  @media
+  only
+  screen
+  and
+  (max-width: 600px) {
   .table-responsive {
-    th, td {
+    th,
+    td {
       padding: var(--vspace-0_5) 1rem;
       font-size: 0.9rem;
       font-size: calc(var(--text-size) * 0.89);
@@ -2265,27 +2278,25 @@ td:last-child {
 }
 
 @media only screen and (max-width: 300px) {
-  .section-table{
-
-    th, td {
+  .section-table {
+    th,
+    td {
       padding: var(--vspace-0_25) 0.5rem; /* Reduce el padding para pantallas muy pequeñas */
       font-size: 0.8rem; /* Ajusta el tamaño de la fuente */
     }
-  
+
     th[colspan="4"] {
       font-size: 0.9rem; /* Ajuste del tamaño de fuente para títulos con colspan */
     }
-  
+
     h2 {
       font-size: 1.4rem; /* Ajusta el tamaño de los encabezados */
     }
-  
+
     .section-table {
       padding: 0 var(--vspace-0_5); /* Añade padding a la sección para evitar que se pegue a los bordes */
     }
-
   }
-
 }
 
 /* ===================================================================
@@ -4063,10 +4074,23 @@ tr:hover {
   }
 }
 
-* Media queries para hacer las tablas responsivas */
-@media only screen and (max-width: 600px) {
+*
+  Media
+  queries
+  para
+  hacer
+  las
+  tablas
+  responsivas
+  */
+  @media
+  only
+  screen
+  and
+  (max-width: 600px) {
   .table-responsive {
-    th, td {
+    th,
+    td {
       padding: var(--vspace-0_5) 1rem;
       font-size: 0.9rem;
       font-size: calc(var(--text-size) * 0.89);
@@ -4076,73 +4100,67 @@ tr:hover {
 }
 
 @media only screen and (max-width: 435px) {
-
-  .contenedor-main{
-    padding-top: var(--vspace-5_5)!important; 
+  .contenedor-main {
+    padding-top: var(--vspace-5_5) !important;
   }
 
-  .section-table{
-
-    th, td {
+  .section-table {
+    th,
+    td {
       padding: var(--vspace-0_25) 0.5rem; /* Reduce el padding para pantallas muy pequeñas */
       font-size: 1.5rem; /* Ajusta el tamaño de la fuente */
     }
-  
+
     th[colspan="4"] {
       font-size: 1.5rem; /* Ajuste del tamaño de fuente para títulos con colspan */
     }
-  
+
     h2 {
       font-size: 3rem; /* Ajusta el tamaño de los encabezados */
     }
-  
+
     .section-table {
       padding: 0 var(--vspace-0_5); /* Añade padding a la sección para evitar que se pegue a los bordes */
     }
-
   }
-
 }
 
 @media only screen and (max-width: 370px) {
-
-  .contenedor-main{
-    padding-top: var(--vspace-5_5)!important; 
+  .contenedor-main {
+    padding-top: var(--vspace-5_5) !important;
   }
 
-  .attention-getter{
-    font-size: 1.2rem!important;
+  .attention-getter {
+    font-size: 1.2rem !important;
   }
-  .section-table{
-
-    th, td {
+  .section-table {
+    th,
+    td {
       padding: var(--vspace-0_25) 0.5rem; /* Reduce el padding para pantallas muy pequeñas */
       font-size: 1rem; /* Ajusta el tamaño de la fuente */
     }
-  
+
     th[colspan="4"] {
       font-size: 1.2rem; /* Ajuste del tamaño de fuente para títulos con colspan */
     }
-  
+
     h2 {
       font-size: 2.2rem; /* Ajusta el tamaño de los encabezados */
     }
-  
+
     .section-table {
       padding: 0 var(--vspace-0_5); /* Añade padding a la sección para evitar que se pegue a los bordes */
     }
-
   }
 
-  .idiomas li{
+  .idiomas li {
     font-size: 1.2rem;
   }
-
 }
 
-.contenedor-main{
+.contenedor-main {
   font-size: 1em;
-  padding-top: 5%;
+  padding-top: 10%;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -4364,7 +4382,7 @@ tr:hover {
  *
  * ------------------------------------------------------------------- */
 .s-footer {
-  --bottom-padding: var(--vspace-2_5);
+  --bottom-padding: var(--vspace-4_5);
   background-color: var(--color-3);
   margin-top: auto;
   padding-top: var(--vspace-6);
@@ -4484,7 +4502,6 @@ tr:hover {
   display: none;
 }
 
-
 /* ------------------------------------------------------------------- 
 * ## go top
 * ------------------------------------------------------------------- 
@@ -4538,9 +4555,9 @@ tr:hover {
 }
 
 /* ------------------------------------------------------------------- 
-* responsive:
-* footer
-* ------------------------------------------------------------------- 
+ * responsive:
+ * footer
+ * ------------------------------------------------------------------- */
 @media screen and (max-width: 1600px) {
   .ss-go-top {
     bottom: calc(var(--bottom-padding) - var(--vspace-0_25));
@@ -4606,7 +4623,6 @@ tr:hover {
 
 @media screen and (max-width: 400px) {
   .ss-go-top {
-    right: -30rem;
+    right: -2rem;
   }
 }
-
